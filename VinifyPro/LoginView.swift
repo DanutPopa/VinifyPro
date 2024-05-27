@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct LoginView: View {
-  @State private var username: String = ""
+  @State private var email: String = ""
   @State private var password: String = ""
+
+  private var isLoginValid: Bool {
+    !email.isEmptyOrWhiteSpace && !password.isEmptyOrWhiteSpace && email.isEmailValid
+  }
 
   var body: some View {
 
@@ -17,16 +21,17 @@ struct LoginView: View {
       Spacer()
 
       VStack {
-        TextField("Username", text: $username)
-        TextField("Password", text: $password)
+        TextField("Email", text: $email)
+        SecureField("Password", text: $password)
       }
+      .textInputAutocapitalization(.never)
       .textFieldStyle(.roundedBorder)
-      
+
       Spacer()
         .frame(maxHeight: 20)
 
       Button {
-
+        //TODO: Implement the network call
       } label: {
         Spacer()
         Text("Login")
@@ -35,6 +40,7 @@ struct LoginView: View {
         Spacer()
       }
       .buttonStyle(.borderedProminent)
+      .disabled(!isLoginValid)
 
       Spacer()
     }

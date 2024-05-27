@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		845587192BFB53460058B4A7 /* VinifyProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845587182BFB53460058B4A7 /* VinifyProApp.swift */; };
-		8455871B2BFB53460058B4A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455871A2BFB53460058B4A7 /* ContentView.swift */; };
+		8455871B2BFB53460058B4A7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8455871A2BFB53460058B4A7 /* LoginView.swift */; };
 		8455871D2BFB53490058B4A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8455871C2BFB53490058B4A7 /* Assets.xcassets */; };
 		845587202BFB53490058B4A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8455871F2BFB53490058B4A7 /* Preview Assets.xcassets */; };
+		84FFE5A72BFCC569001B6671 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFE5A62BFCC569001B6671 /* String+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		845587152BFB53460058B4A7 /* VinifyPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VinifyPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845587182BFB53460058B4A7 /* VinifyProApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VinifyProApp.swift; sourceTree = "<group>"; };
-		8455871A2BFB53460058B4A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8455871A2BFB53460058B4A7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		8455871C2BFB53490058B4A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8455871F2BFB53490058B4A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84FFE5A62BFCC569001B6671 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,9 @@
 		845587172BFB53460058B4A7 /* VinifyPro */ = {
 			isa = PBXGroup;
 			children = (
+				84FFE5A52BFCC54D001B6671 /* Extensions */,
 				845587182BFB53460058B4A7 /* VinifyProApp.swift */,
-				8455871A2BFB53460058B4A7 /* ContentView.swift */,
+				8455871A2BFB53460058B4A7 /* LoginView.swift */,
 				8455871C2BFB53490058B4A7 /* Assets.xcassets */,
 				8455871E2BFB53490058B4A7 /* Preview Content */,
 			);
@@ -65,6 +68,14 @@
 				8455871F2BFB53490058B4A7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84FFE5A52BFCC54D001B6671 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84FFE5A62BFCC569001B6671 /* String+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8455871B2BFB53460058B4A7 /* ContentView.swift in Sources */,
+				8455871B2BFB53460058B4A7 /* LoginView.swift in Sources */,
 				845587192BFB53460058B4A7 /* VinifyProApp.swift in Sources */,
+				84FFE5A72BFCC569001B6671 /* String+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
